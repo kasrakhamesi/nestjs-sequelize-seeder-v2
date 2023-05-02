@@ -199,10 +199,7 @@ export class Cat extends Model<Cat> {
    @Column
    name: string;
 
-   @BelongsToMany(
-      () => Breed,
-      () => CatBreed,
-   )
+   @BelongsToMany(() => Breed, () => CatBreed)
    breeds: Breed[];
 }
 
@@ -216,10 +213,7 @@ export class Breed extends Model<Breed> {
    @Column
    name: string;
 
-   @BelongsToMany(
-      () => Cat,
-      () => CatBreed,
-   )
+   @BelongsToMany(() => Cat, () => CatBreed)
    Cats: Cat[];
 }
 
@@ -306,14 +300,11 @@ export class SeedCatBreedUse implements OnSeederInit {
 
 ## ⭐ Support for
 
-`nestjs-sequelize-seeder` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:helloyonicb@gmail.com).
+`nestjs-sequelize-seeder` is an open source project licensed by [MIT](LICENSE). You can grow thanks to the sponsors and the support of the amazing sponsors. If you want to join them, [contact me here](mailto:khamesikasra@gmail.com).
 
 ## 🎩 Stay in touch
 
--  Github [@yonicalsin](https://github.com/yonicalsin)
--  Twitter [@yonicalsin](https://twitter.com/yonicalsin)
--  Instagram [@yoni_calsin](https://instagram.com/yoni_calsin)
--  Medium [@yonicalsin](https://medium.com/yonicalsin)
+-  Github [@kasrakhamesi](https://github.com/kasrakhamesi)
 
 ## 🚀 Contributors
 
