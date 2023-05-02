@@ -1,8 +1,8 @@
 /*!
- * nestjs-sequelize-seeder v1.1.1 (https://github.com/yonicalsin/nestjs-sequelize-seeder)
- * Copyright 2020 The nestjs-sequelize-seeder Authors
+ * nestjs-sequelize-seeder-v2 v2 (https://github.com/kasrakhamesi/nestjs-sequelize-seeder-v2)
+ * Copyright 2020 The nestjs-sequelize-seeder-v2 Authors
  * Copyright 2020 Yoni Calsin.
- * Licensed under MIT (https://github.com/yonicalsin/nestjs-sequelize-seeder/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/kasrakhamesi/nestjs-sequelize-seeder-v2/blob/master/LICENSE)
  */
 
 import { Model } from 'sequelize-typescript';

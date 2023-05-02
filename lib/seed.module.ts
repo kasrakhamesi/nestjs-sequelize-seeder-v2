@@ -17,7 +17,7 @@ import { getConnectionToken } from '@nestjs/sequelize';
 })
 export class SeederModule {
    /**
-    * @author Yoni Calsin <helloyonicb@gmail.com>
+    * @author Kasra Khamesi <khamesikasra@gmail.com>
     * @param options SeederModuleOptions
     */
    static forRoot(options?: SeederModuleOptions): DynamicModule {
@@ -38,7 +38,7 @@ export class SeederModule {
    }
 
    /**
-    * @author Yoni Calsin <helloyonicb@gmail.com>
+    * @author Kasra Khamesi <khamesikasra@gmail.com>
     * @param seeds Function | Function[]
     * @param connection string | undefined
     */
@@ -57,7 +57,7 @@ export class SeederModule {
    }
 
    /**
-    * @author Yoni Calsin <helloyonicb@gmail.com>
+    * @author Kasra Khamesi <khamesikasra@gmail.com>
     * @param seeds Function[]
     * @param connection string | undefined
     */

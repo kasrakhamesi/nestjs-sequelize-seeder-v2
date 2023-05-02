@@ -13,7 +13,7 @@ const defaultOptions: Omit<SeederOptions, 'model'> = {
 };
 
 /**
- * @author Yoni Calsin <helloyonicb@gmail.com>
+ * @author Kasra Khamesi <khamesikasra@gmail.com>
  * @param options SeederOptions
  */
 export function Seeder(options: SeederOptions) {
