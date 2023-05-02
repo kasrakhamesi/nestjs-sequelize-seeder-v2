@@ -43,8 +43,7 @@ Once the installation process is complete, we can import the **SeederModule** in
 
 ```ts
 import { Module } from '@nestjs/common';
-import { SeederModule } from 'nestjs-sequelize-seeder-v2';
-
+import { SeederModule } from 'nestjs-sequelize-seeder';
 @Module({
    imports: [
       SeederModule.forRoot({
@@ -117,7 +116,7 @@ The decorator `Seeder` receives as parameter the unique values, this has to be a
 > `genSaltSync` and `hashSync` are imported from **bcryptjs**, you will have to install it independently !
 
 ```ts
-import { Seeder, OnSeederInit } from 'nestjs-sequelize-seeder-v2';
+import { Seeder, OnSeederInit } from 'nestjs-sequelize-seeder';
 import { ModelUser } from 'src/models/user';
 import { genSaltSync, hashSync } from 'bcryptjs';
 
@@ -166,7 +165,7 @@ Next, let's look at the **UserModule:**
 
 ```ts
 import { Module } from '@nestjs/common';
-import { SeederModule } from 'nestjs-sequelize-seeder-v2';
+import { SeederModule } from 'nestjs-sequelize-seeder';
 import { SeedUser } from 'src/seeds/user.seed';
 
 @Module({
