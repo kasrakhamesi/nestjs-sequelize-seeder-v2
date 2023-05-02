@@ -1,6 +1,6 @@
 {
    "name": "nestjs-sequelize-seeder-v2",
-   "version": "2.0.5",
+   "version": "2.0.6",
    "description": "🌾 A simple extension library for nestjs sequelize to perform seeding.",
    "main": "dist/index.js",
    "type": "dist/index.d.ts",
@@ -35,19 +35,20 @@
       "rimraf": "3.0.2"
    },
    "dependencies": {
-      "format-fast": "^1.0.1",
-      "is-all-utils": "^1.0.3",
-      "merge-options-default": "^1.0.2"
+      "format-fast": "^1.0.2",
+      "is-all-utils": "^1.0.7",
+      "merge-options-default": "^1.0.2",
+      "typescript": "^5.0.4"
    },
    "peerDependencies": {
-      "tslib": "*",
+      "@nestjs/common": "*",
+      "@nestjs/core": "*",
       "@nestjs/sequelize": "*",
+      "mysql2": "*",
+      "reflect-metadata": "*",
+      "rxjs": "*",
       "sequelize": "*",
       "sequelize-typescript": "*",
-      "mysql2": "*",
-      "@nestjs/core": "*",
-      "@nestjs/common": "*",
-      "reflect-metadata": "*",
-      "rxjs": "*"
+      "tslib": "*"
    }
 }
