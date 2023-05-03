@@ -1,7 +1,12 @@
 # Folders
 node_modules
 dist
-
+.yarn
+.yarnrc.yml
+.pnp.cjs
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
 
 # Files
 chang.md
