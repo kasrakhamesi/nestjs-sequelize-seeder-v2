@@ -32,23 +32,19 @@
    "homepage": "https://github.com/kasrakhamesi/nestjs-sequelize-seeder-v2#readme",
    "devDependencies": {
       "prettier": "2.2.1",
-      "rimraf": "3.0.2"
-   },
-   "dependencies": {
-      "format-fast": "^1.0.2",
-      "is-all-utils": "^1.0.7",
-      "merge-options-default": "^1.0.2",
+      "rimraf": "3.0.2",
       "typescript": "^5.0.4"
    },
-   "peerDependencies": {
-      "@nestjs/common": "*",
-      "@nestjs/core": "*",
-      "@nestjs/sequelize": "*",
-      "mysql2": "*",
-      "reflect-metadata": "*",
-      "rxjs": "*",
-      "sequelize": "*",
-      "sequelize-typescript": "*",
-      "tslib": "*"
-   }
+   "dependencies": {
+      "@nestjs/common": "^9.4.0",
+      "@nestjs/core": "^9.4.0",
+      "@nestjs/sequelize": "^9.0.2",
+      "merge-options-default": "^1.0.2",
+      "reflect-metadata": "^0.1.13",
+      "rxjs": "^7.8.1",
+      "sequelize": "^6.31.1",
+      "sequelize-typescript": "^2.1.5",
+      "tslib": "^2.5.0"
+   },
+   "packageManager": "yarn@3.5.1"
 }
