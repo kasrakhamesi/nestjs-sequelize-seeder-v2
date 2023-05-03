@@ -90,7 +90,7 @@ export class SeederService {
     */
    private async isUnique(where: More): Promise<boolean> {
       try {
-         if (where == null || isNull(where) || where[1] === '}') return false
+         if (where[1] == undefined) return false
          const data = await this.model.findOne({ where });
          if (data) return true;
          return false;
@@ -168,7 +168,7 @@ export class SeederService {
       let autoId = 0;
 
       for (let [index, item] of Object.entries<any>(this.data)) {
-         let alreadyitem = null;
+         let alreadyItem = null;
          index = Number(index) as any;
 
          if (hasUniques) {
@@ -185,9 +185,9 @@ export class SeederService {
                }
             }
 
-            alreadyitem = await this.isUnique(uniqueData);
+            alreadyItem = await this.isUnique(uniqueData);
 
-            if (alreadyitem === false) {
+            if (alreadyItem === false) {
                ++autoId;
                await this.createItem(item, {
                   autoId,
