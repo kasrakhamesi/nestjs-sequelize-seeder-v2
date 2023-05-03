@@ -5,7 +5,7 @@ import { ModelCtor, Model } from 'sequelize/types';
 import { SeederModuleOptions, More, SeederOptions } from '.';
 import { __rest } from 'tslib';
 import MergeDefault from 'merge-options-default';
-import { isFunction, isBoolean, isNumber, isNull } from 'is-all-utils';
+import { isFunction, isBoolean, isNumber, isNull, isObj } from 'is-all-utils';
 
 @Injectable()
 export class SeederService {
@@ -90,7 +90,7 @@ export class SeederService {
     */
    private async isUnique(where: More): Promise<boolean> {
       try {
-         if (where[1] == undefined) return false
+         if (!where || where[1] == undefined || !isObj(where) || Array(where).length === 0) return false
          const data = await this.model.findOne({ where });
          if (data) return true;
          return false;
